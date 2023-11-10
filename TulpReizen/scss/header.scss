@@ -1,0 +1,42 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+.header{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__figure{
+    background-image: colors.$linear-gradient, url(/img/photo-1534351590666-13e3e96b5017.webp);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.header > .header__figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: colors.$font-color
+}
+
+.header__h1{
+    font-family: fonts.$handwriting;
+    font-size: 250%;
+}
+
+.header__h2{
+    @extend %h2Handwriting;
+}
+
+.header__logo{
+    @extend %icon;
+}
+
+.header__button{
+    @extend %cta;
+}

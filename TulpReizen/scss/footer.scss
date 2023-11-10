@@ -1,0 +1,27 @@
+@use 'colors';
+@use 'components';
+
+.footer{
+    padding: 5rem 0;
+    background-color: colors.$nav-background;
+    color: colors.$font-color;
+}
+
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__listItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__icon{
+    font-size: 2rem;
+    padding: 0.6rem;
+    @extend %icon;
+}

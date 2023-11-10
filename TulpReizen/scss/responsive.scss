@@ -1,0 +1,88 @@
+@use 'colors';
+
+@media screen and (max-width: 75rem) {
+    .body{
+        font-size: 1.6rem;
+    }
+
+    .header{
+        height: 140rem;
+    }
+
+    .nav{
+        font-size: 1rem;
+        height: auto;
+        padding: 1rem;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .over{
+        min-height: 80rem;
+    }
+
+    .over__header{
+        height: 20%;
+    }
+
+    .over__columns{
+    flex-direction: column;
+    height: 80%;
+    padding: 2rem;
+    }
+
+    .over__column{
+    height: 60%;
+    width: 100%;
+    }
+
+    .over__p{
+    width: 100%;
+    color: colors.$font-color;
+    }
+
+    .over__figure{
+        position: relative;
+        height: 40%;
+    }
+
+    .over__img{
+        width: 100%;
+    }
+
+    .kenmerken{
+        min-height: 80rem;
+    }
+
+    .kermerken__listitem{
+        width: 100%;
+    }
+
+    .galerij{
+        height: auto;
+    }
+
+    .galerij__fotos{
+        flex-wrap: wrap;
+    }
+
+    .galerij_img{
+        width: 100%;
+        height: 20rem;
+    }
+
+    .galerij__foto:hover .galerij__button{
+        opacity: 0;
+    }
+
+    .galerij__foto:hover .galerij__section{
+        transform: scale(0);
+    }
+
+}
+
+@media screen and (max-width: 50rem) {
+    .nav__list{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,47 @@
+@use 'colors';
+@use 'fonts';
+
+// CAll to action button met hover
+%cta{
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 60%;
+    border: none;
+    background-color: colors.$button-background;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$button-background, 10%);
+}
+
+
+// H2 heading
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    color: colors.$font-color;
+}
+
+//Standaard secties
+%section{
+    padding: 10rem 0;
+    color: white;
+    border-bottom: colors.$border-color;
+    height: 100%;
+}
+
+//Standaard header
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+//Icon
+%icon{
+    font-size: 200%;
+    border: colors.$border-color;
+    border-radius: 50%;
+}

@@ -1,0 +1,39 @@
+@use 'colors';
+@use 'components';
+
+.over{
+    @extend %section;
+}
+
+.over__header{
+    @extend %header;
+}
+
+.over__h2{
+    @extend %h2Handwriting;
+}
+
+.over__columns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.over__column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+}
+
+.over__p{
+    width: 80%;
+    font-size: 60%;
+    color: colors.$font-color;
+}
+
+.over__img{
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
